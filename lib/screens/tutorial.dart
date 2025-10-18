@@ -18,7 +18,7 @@ class Tutorial extends StatelessWidget {
             },
           ),
         ),
-        title: Text("About Us",
+        title: Text("FAQ List",
             style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,

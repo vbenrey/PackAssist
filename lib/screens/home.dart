@@ -113,8 +113,7 @@ class _HomeState extends State<Home> {
                                     precipitationProbability = double.parse(weatherData.precipitationProbability.toStringAsFixed(2));
                                     humidity = double.parse(weatherData.humidity.toStringAsFixed(2));
                                   });
-                                } print(locations[index].latitude);
-                                print(locations[index].longitude);
+                                }
                               });
                               //if the values are null, then display nothing and pop out
                               Navigator.pop(context);

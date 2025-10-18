@@ -566,6 +566,22 @@ class _TripState extends State<Trip> {
                           ],
                         ),
                       ),
+                      SizedBox(height: 30),
+                      GestureDetector(
+                        onTap: ()
+                        {Navigator.pushNamed(context, '/tutorial');},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("  FAQ Page",
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold,
+                                  fontFamily: "Crimson", color: sand
+                              ),),
+                            Icon(Icons.arrow_forward_ios_rounded, size: 20, color: sand, fontWeight: FontWeight.bold,)
+                          ],
+                        ),
+                      ),
                       SizedBox(height: 130),
                     ],
                   ),),

@@ -11,6 +11,7 @@ import 'package:packassist/screens/login.dart';
 import 'package:packassist/screens/previewtripadd.dart';
 import 'package:packassist/screens/register.dart';
 import 'package:packassist/screens/trip.dart';
+import 'package:packassist/screens/tutorial.dart';
 import 'package:packassist/screens/userprofile.dart';
 import 'package:packassist/screens/viewluggage.dart';
 import 'package:packassist/screens/weather.dart';
@@ -53,7 +54,8 @@ class MyApp extends StatelessWidget {
         '/deleteAccount': (context) => DeleteAccount(),
         '/account': (context) => Account(),
         '/deleteAccount': (context) => DeleteAccount(),
-        '/clearUserData': (context) => ClearUserData()
+        '/clearUserData': (context) => ClearUserData(),
+        '/tutorial': (context) => Tutorial()
       },
     );
   }

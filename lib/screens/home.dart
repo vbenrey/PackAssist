@@ -369,6 +369,22 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                       ),
+                      SizedBox(height: 30),
+                      GestureDetector(
+                        onTap: ()
+                        {Navigator.pushNamed(context, '/tutorial');},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("  FAQ Page",
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold,
+                                  fontFamily: "Crimson", color: sand
+                              ),),
+                            Icon(Icons.arrow_forward_ios_rounded, size: 20, color: sand, fontWeight: FontWeight.bold,)
+                          ],
+                        ),
+                      ),
                       SizedBox(height: 130),
                     ],
                   ),),
@@ -406,6 +422,47 @@ class _HomeState extends State<Home> {
           padding: EdgeInsets.all(30),
           child: Column(
             children: [
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, '/tutorial');
+                },
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: whitish,
+                      boxShadow: [BoxShadow(
+                          offset: Offset(1, 5),
+                          blurRadius: 10,
+                          spreadRadius: 5,
+                          color: Color.fromRGBO(0, 0, 0, 0.1)
+                      )],
+                      borderRadius: BorderRadius.circular(20)
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Need help navigating the app?",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: black,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Crimson",
+                        ),),
+                      SizedBox(height: 10),
+                      Text("Click here to view the FAQ page!",
+                        textAlign: TextAlign.justify,
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey[600],
+                          fontWeight: FontWeight.bold,
+                          fontFamily: "Crimson",
+                        ),),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 30),
               Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -623,76 +680,7 @@ class _HomeState extends State<Home> {
               ),
               SizedBox(height: 15),
               Column(
-                    // mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      // GestureDetector(
-                      //     onTap: () {Navigator.pushNamed(context, "/packing");},
-                      //     child: Container(
-                      //       width: double.infinity,
-                      //       padding: EdgeInsets.all(15),
-                      //       decoration: BoxDecoration(
-                      //         color: whitish,
-                      //         borderRadius: BorderRadius.circular(10),
-                      //           boxShadow: [BoxShadow(
-                      //               offset: Offset(1, 0),
-                      //               blurRadius: 10,
-                      //               spreadRadius: 0.05,
-                      //               color: Colors.black.withOpacity(.15)
-                      //           )]
-                      //       ),
-                      //       child: Row(
-                      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      //         crossAxisAlignment: CrossAxisAlignment.center,
-                      //         children: [
-                      //           Row(
-                      //             children: [
-                      //               Container(
-                      //                 width: 40,
-                      //                 height: 40,
-                      //                 decoration: BoxDecoration(
-                      //                   borderRadius: BorderRadius.circular(10),
-                      //                   image: DecorationImage(
-                      //                       image: AssetImage('assets/images/packing.png'),
-                      //                       fit: BoxFit.cover
-                      //                   ),
-                      //                 ),
-                      //               ),
-                      //               SizedBox(width: 20),
-                      //               Column(
-                      //                 crossAxisAlignment: CrossAxisAlignment.start,
-                      //                 children: [
-                      //                   Text(
-                      //                     "Start Packing",
-                      //                     style: TextStyle(
-                      //                       fontSize: 18,
-                      //                       color: black,
-                      //                       fontWeight: FontWeight.bold,
-                      //                       fontFamily: "Crimson",
-                      //                     ),
-                      //                   ),
-                      //                   Text(
-                      //                     "Start add luggage for your trip",
-                      //                     style: TextStyle(
-                      //                       fontSize: 13,
-                      //                       color: sage,
-                      //                       fontWeight: FontWeight.bold,
-                      //                       fontFamily: "Crimson",
-                      //                     ),
-                      //                   ),
-                      //                 ],
-                      //               ),
-                      //             ],
-                      //           ),
-                      //           SizedBox(width: 20),
-                      //           Icon(
-                      //             Icons.chevron_right_rounded,
-                      //             color: sagegreen,
-                      //             fontWeight: FontWeight.bold,
-                      //           )
-                      //         ],
-                      //       ),
-                      //     ),
-                      //   ),
                       SizedBox(height: 10),
                       GestureDetector(
                             onTap: () {Navigator.pushNamed(context, "/travel");},

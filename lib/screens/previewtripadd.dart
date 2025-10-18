@@ -15,7 +15,7 @@ class AddTripPreview extends StatelessWidget {
                 child: Opacity(
                   opacity: 0.8,
                   child: Image(
-                    image: AssetImage('assets/images/airplane.png'),
+                    image: AssetImage('assets/images/airplane.jpg'),
                     fit: BoxFit.cover,
                   ),
                 )

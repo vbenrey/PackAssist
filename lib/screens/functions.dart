@@ -176,8 +176,6 @@ Future<WeatherData?> getWeather(double latitude, double longitude, String start,
     'start_date': start,
     'end_date': end,
   });
-
-
   final response = await http.get(uri);
   if (response.statusCode == 200) {
     //decodes json into string map

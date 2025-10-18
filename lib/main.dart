@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PreviewPage(),
+      home: AuthGate(),
       routes: {
         '/home':(context) => Home(),
         '/weather': (context) => Weather(),

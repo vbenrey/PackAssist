@@ -209,14 +209,6 @@ Future<WeatherData?> getWeather(double latitude, double longitude, String start,
   return null;
 }
 
-String getRainIntensity(num rainChance) {
-  if (rainChance < 10) return "Minimal Rain";
-  if (rainChance < 30) return "Light Rain";
-  if (rainChance < 60) return "Moderate Rain";
-  if (rainChance < 80) return "Heavy Rain";
-  return "Extreme Rain";
-}
-
 //this is for wind speeds, if windy ung location
 String getWindDescription(num windSpeed) {
   if (windSpeed < 5) return "Calm Winds";
